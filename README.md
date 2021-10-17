@@ -42,13 +42,14 @@ npm run start
 this command transforms the app into  ES5 and the run it for production.
 
 ## Making requests
- For making requests you can refer to the provided postman [documentation]() 
+ For making requests you can refer to the provided postman [documentation](https://documenter.getpostman.com/view/13568830/UV5WDdo9) 
 
 ## what have been done so far:
 
 
-- Documented with ``Postman``
-- (phone number must be a Rwandan number, and email should be validated).
+-  Documented with ``Postman``
+- ``[X]``(phone number must be a Rwandan number)
+- Email should be validated.
 - The national id must be 16 numbers.
 - Only 18 year old employees are allowed to be registered.
 - National Id, Email, Code and phone number are unique.
