@@ -1,0 +1,45 @@
+{
+  "name": "owesomity-emp-mgment",
+  "version": "1.0.0",
+  "description": "A restful Api system to manage employees. An Owesomity backend challenge.",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build && node ./build/app.js",
+    "start:dev": "nodemon --exec babel-node ./src/app.js",
+    "clean": "rm -rf build && mkdir build",
+    "build-babel": "babel -d ./build ./src/app.js -s",
+    "build": "npm run clean && npm run build-babel"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MugiranezaJ/owesomity-emp-mgment.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MugiranezaJ/owesomity-emp-mgment/issues"
+  },
+  "homepage": "https://github.com/MugiranezaJ/owesomity-emp-mgment#readme",
+  "dependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.8",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "joi": "^17.4.2",
+    "jsonwebtoken": "^8.5.1",
+    "mysql2": "^2.3.0",
+    "nodemailer": "^6.7.0",
+    "sequelize": "^6.7.0"
+  },
+  "devDependencies": {
+    "@babel/node": "^7.15.8",
+    "@babel/plugin-transform-runtime": "^7.15.8",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.15.8",
+    "@babel/runtime": "^7.15.4",
+    "nodemon": "^2.0.13"
+  }
+}
